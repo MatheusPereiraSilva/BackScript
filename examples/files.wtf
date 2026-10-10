@@ -1,0 +1,4 @@
+"hello\n" "backscript-example.txt" write_file
+"world\n" "backscript-example.txt" append_file
+"backscript-example.txt" file_exists print
+"backscript-example.txt" read_file print

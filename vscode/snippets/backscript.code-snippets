@@ -1,0 +1,88 @@
+{
+  "Hello world": {
+    "prefix": "bshello",
+    "body": [
+      "\"Hello, world!\" print",
+      "$0"
+    ],
+    "description": "Print a greeting."
+  },
+  "Reverse if": {
+    "prefix": "bsif",
+    "body": [
+      "end",
+      "    ${1:\"Allowed\" print}",
+      "${2:true} if",
+      "$0"
+    ],
+    "description": "Reverse conditional block."
+  },
+  "Reverse if / else": {
+    "prefix": "bsifelse",
+    "body": [
+      "end",
+      "    ${1:\"Allowed\" print}",
+      "else",
+      "    ${2:\"Denied\" print}",
+      "${3:true} if",
+      "$0"
+    ],
+    "description": "Reverse conditional with both branches."
+  },
+  "Reverse while": {
+    "prefix": "bswhile",
+    "body": [
+      "0 ${1:i} set",
+      "end",
+      "    ${2:i print}",
+      "    $1 1 add $1 set",
+      "${1:i} ${3:5} less while",
+      "$0"
+    ],
+    "description": "Counted reverse while loop."
+  },
+  "Function": {
+    "prefix": "bsfunc",
+    "body": [
+      "end",
+      "    ${1:value} return",
+      "${1:value} ${2:identity} function",
+      "$0"
+    ],
+    "description": "Declare a function after its body."
+  },
+  "Range loop": {
+    "prefix": "bsrange",
+    "body": [
+      "end",
+      "    ${1:i} print",
+      "${2:0} ${3:10} ${4:1} ${1:i} range",
+      "$0"
+    ],
+    "description": "Exclusive range with a custom step."
+  },
+  "Array": {
+    "prefix": "bsarray",
+    "body": [
+      "${1:10 20 30} array ${2:numbers} set",
+      "$0"
+    ],
+    "description": "Create and assign an array."
+  },
+  "Object": {
+    "prefix": "bsobject",
+    "body": [
+      "\"${1:name}\" \"${2:Matheus}\" 1 object ${3:user} set",
+      "$0"
+    ],
+    "description": "Create a string-keyed object."
+  },
+  "Import": {
+    "prefix": "bsimport",
+    "body": [
+      "\"${1:modules/math.wtf}\" import",
+      "$0"
+    ],
+    "description": "Import a file relative to this source file."
+  }
+}

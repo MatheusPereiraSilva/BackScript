@@ -1,0 +1,162 @@
+{
+  "$schema": "vscode://schemas/color-theme",
+  "name": "BackScript Neon",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#0B0D16",
+    "editor.foreground": "#E6EAF2",
+    "editorCursor.foreground": "#58E1FF",
+    "editor.lineHighlightBackground": "#131827",
+    "editor.selectionBackground": "#294360",
+    "editor.inactiveSelectionBackground": "#202C42",
+    "editor.selectionHighlightBackground": "#29436080",
+    "editor.findMatchBackground": "#62451C",
+    "editor.findMatchHighlightBackground": "#62451C80",
+    "editorLineNumber.foreground": "#5C657D",
+    "editorLineNumber.activeForeground": "#C1CBDE",
+    "editorIndentGuide.background1": "#242A3D",
+    "editorIndentGuide.activeBackground1": "#526180",
+    "editorWhitespace.foreground": "#30374D",
+    "editorError.foreground": "#FF647C",
+    "editorWarning.foreground": "#FFC66D",
+    "editorInfo.foreground": "#58E1FF",
+    "editorGutter.addedBackground": "#AEF593",
+    "editorGutter.modifiedBackground": "#58E1FF",
+    "editorGutter.deletedBackground": "#FF647C",
+    "editorWidget.background": "#151A29",
+    "editorSuggestWidget.selectedBackground": "#294360",
+    "focusBorder": "#58E1FF",
+    "sideBar.background": "#10131F",
+    "sideBar.foreground": "#C1CBDE",
+    "activityBar.background": "#0B0D16",
+    "activityBar.foreground": "#58E1FF",
+    "activityBar.inactiveForeground": "#79839B",
+    "tab.activeBackground": "#0B0D16",
+    "tab.activeForeground": "#E6EAF2",
+    "tab.inactiveBackground": "#151A29",
+    "tab.inactiveForeground": "#9BA6BF",
+    "titleBar.activeBackground": "#10131F",
+    "titleBar.activeForeground": "#E6EAF2",
+    "statusBar.background": "#151A29",
+    "statusBar.foreground": "#C1CBDE",
+    "statusBar.debuggingBackground": "#63314E",
+    "statusBar.debuggingForeground": "#FFFFFF",
+    "panel.background": "#10131F",
+    "terminal.background": "#0B0D16",
+    "terminal.foreground": "#E6EAF2",
+    "terminal.ansiRed": "#FF647C",
+    "terminal.ansiGreen": "#AEF593",
+    "terminal.ansiYellow": "#FFC66D",
+    "terminal.ansiBlue": "#78ACFF",
+    "terminal.ansiMagenta": "#FF79C6",
+    "terminal.ansiCyan": "#58E1FF",
+    "badge.background": "#58E1FF",
+    "badge.foreground": "#0B0D16"
+  },
+  "tokenColors": [
+    {
+      "name": "Comments",
+      "scope": [
+        "comment"
+      ],
+      "settings": {
+        "foreground": "#8B95AD"
+      }
+    },
+    {
+      "name": "Control and execution",
+      "scope": [
+        "keyword.control",
+        "keyword.other.backscript"
+      ],
+      "settings": {
+        "foreground": "#FF79C6"
+      }
+    },
+    {
+      "name": "Functions",
+      "scope": [
+        "entity.name.function"
+      ],
+      "settings": {
+        "foreground": "#58E1FF"
+      }
+    },
+    {
+      "name": "Strings and module paths",
+      "scope": [
+        "string",
+        "entity.name.filename.backscript"
+      ],
+      "settings": {
+        "foreground": "#AEF593"
+      }
+    },
+    {
+      "name": "Escapes",
+      "scope": [
+        "constant.character.escape"
+      ],
+      "settings": {
+        "foreground": "#D7FFC8"
+      }
+    },
+    {
+      "name": "Numbers",
+      "scope": [
+        "constant.numeric"
+      ],
+      "settings": {
+        "foreground": "#FFC66D"
+      }
+    },
+    {
+      "name": "Constants",
+      "scope": [
+        "constant.language"
+      ],
+      "settings": {
+        "foreground": "#78ACFF"
+      }
+    },
+    {
+      "name": "Operators",
+      "scope": [
+        "keyword.operator"
+      ],
+      "settings": {
+        "foreground": "#C5A0FF"
+      }
+    },
+    {
+      "name": "Builtins and types",
+      "scope": [
+        "support.function",
+        "support.type",
+        "entity.name.type"
+      ],
+      "settings": {
+        "foreground": "#70DDD4"
+      }
+    },
+    {
+      "name": "Variables",
+      "scope": [
+        "variable"
+      ],
+      "settings": {
+        "foreground": "#E6EAF2"
+      }
+    },
+    {
+      "name": "Invalid syntax",
+      "scope": [
+        "invalid"
+      ],
+      "settings": {
+        "foreground": "#FF647C",
+        "fontStyle": "underline"
+      }
+    }
+  ]
+}

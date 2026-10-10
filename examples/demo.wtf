@@ -1,0 +1,20 @@
+"BackScript demo" print
+
+10 20 add print
+100 4 divide print
+
+end
+    a b add return
+a b sum function
+
+40 2 sum call print
+
+1 2 3 4 array numbers set
+numbers print
+numbers 0 get print
+
+end
+    "Access granted" print
+else
+    "Access denied" print
+21 18 greater_equal if

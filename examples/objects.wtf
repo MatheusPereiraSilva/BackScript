@@ -1,0 +1,8 @@
+"name" "Matheus"
+"age" 30
+2 object user set
+user "name" property print
+user "age" 31 set_property
+user "age" property print
+user "name" has_property print
+user keys_length print

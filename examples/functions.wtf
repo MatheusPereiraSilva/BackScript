@@ -1,0 +1,11 @@
+end
+    a b add return
+a b sum function
+
+end
+    a b multiply value set
+    value return
+a b multiply_values function
+
+10 20 sum call print
+6 7 multiply_values call print

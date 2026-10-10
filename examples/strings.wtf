@@ -1,0 +1,12 @@
+"Back" "Script" add print
+"hello" uppercase print
+"HELLO" lowercase print
+"  hello  " trim print
+"BackScript" "Script" contains print
+"BackScript" "Back" starts_with print
+"BackScript" "Script" ends_with print
+"hello" 1 3 substring print
+"hello" length print
+42 string print
+true string print
+"line one\nline two\t\"quoted\"\\" print

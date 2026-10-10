@@ -1,0 +1,63 @@
+{
+  "name": "backscript",
+  "displayName": "BackScript",
+  "description": "BackScript language support, reverse-block snippets, and the optional BackScript Neon theme.",
+  "version": "1.0.0",
+  "publisher": "backscript",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets",
+    "Themes"
+  ],
+  "keywords": [
+    "backscript",
+    "wtf",
+    "postfix"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "backscript",
+        "aliases": [
+          "BackScript",
+          "backscript"
+        ],
+        "extensions": [
+          ".wtf"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "backscript",
+        "scopeName": "source.backscript",
+        "path": "./syntaxes/backscript.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "backscript",
+        "path": "./snippets/backscript.code-snippets"
+      }
+    ],
+    "themes": [
+      {
+        "label": "BackScript Neon",
+        "uiTheme": "vs-dark",
+        "path": "./themes/backscript-neon-color-theme.json"
+      }
+    ],
+    "configurationDefaults": {
+      "[backscript]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4,
+        "editor.autoIndent": "full"
+      }
+    }
+  }
+}

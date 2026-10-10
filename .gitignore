@@ -1,0 +1,4 @@
+.backscript/
+*.c
+__pycache__/
+*.vsix

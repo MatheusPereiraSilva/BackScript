@@ -1,0 +1,7 @@
+15 age set
+
+end
+    "Adult" print
+else
+    "Minor" print
+age 18 greater_equal if

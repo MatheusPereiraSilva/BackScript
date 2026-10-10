@@ -1,0 +1,6 @@
+0 i set
+
+end
+    i print
+    i 1 add i set
+i 5 less while

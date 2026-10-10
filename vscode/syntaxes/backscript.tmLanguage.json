@@ -1,0 +1,172 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "BackScript",
+  "scopeName": "source.backscript",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#imports"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#control"
+    },
+    {
+      "include": "#execution"
+    },
+    {
+      "include": "#arithmetic"
+    },
+    {
+      "include": "#comparison"
+    },
+    {
+      "include": "#boolean"
+    },
+    {
+      "include": "#collections"
+    },
+    {
+      "include": "#string-operations"
+    },
+    {
+      "include": "#files"
+    },
+    {
+      "include": "#math"
+    },
+    {
+      "include": "#constants"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "include": "#functions"
+    },
+    {
+      "include": "#variables"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "name": "comment.line.number-sign.backscript",
+      "begin": "#",
+      "end": "$",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.comment.backscript"
+        }
+      }
+    },
+    "escapes": {
+      "patterns": [
+        {
+          "name": "constant.character.escape.backscript",
+          "match": "\\\\(?:[\"\\\\/bfnrt]|u[0-9A-Fa-f]{4})"
+        },
+        {
+          "name": "invalid.illegal.escape.backscript",
+          "match": "\\\\(?:.|$)"
+        }
+      ]
+    },
+    "imports": {
+      "name": "meta.import.backscript string.quoted.double.backscript",
+      "contentName": "entity.name.filename.backscript",
+      "begin": "\"(?=(?:[^\"\\\\]|\\\\.)*\"\\s+import\\b)",
+      "end": "\"|$",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.begin.backscript"
+        }
+      },
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.end.backscript"
+        }
+      },
+      "patterns": [
+        {
+          "include": "#escapes"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.backscript",
+      "begin": "\"",
+      "end": "\"|$",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.begin.backscript"
+        }
+      },
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.end.backscript"
+        }
+      },
+      "patterns": [
+        {
+          "include": "#escapes"
+        }
+      ]
+    },
+    "functions": {
+      "name": "entity.name.function.backscript",
+      "match": "\\b[A-Za-z_][A-Za-z_0-9]*(?=\\s+(?:function|call)\\b)"
+    },
+    "control": {
+      "name": "keyword.control.backscript",
+      "match": "\\b(?:end|if|else|while|range|function|return|break|continue|import)\\b"
+    },
+    "execution": {
+      "name": "keyword.other.backscript",
+      "match": "\\b(?:print|set|call)\\b"
+    },
+    "arithmetic": {
+      "name": "keyword.operator.arithmetic.backscript",
+      "match": "\\b(?:add|subtract|multiply|divide|mod)\\b"
+    },
+    "comparison": {
+      "name": "keyword.operator.comparison.backscript",
+      "match": "\\b(?:equal|not_equal|greater|less|greater_equal|less_equal)\\b"
+    },
+    "boolean": {
+      "name": "keyword.operator.logical.backscript",
+      "match": "\\b(?:and|or|not)\\b"
+    },
+    "collections": {
+      "name": "support.function.collection.backscript",
+      "match": "\\b(?:array|object|get|setat|property|set_property|has_property|keys_length|length|push|pop)\\b"
+    },
+    "string-operations": {
+      "name": "support.function.string.backscript",
+      "match": "\\b(?:string|substring|contains|starts_with|ends_with|uppercase|lowercase|trim)\\b"
+    },
+    "files": {
+      "name": "support.function.file.backscript",
+      "match": "\\b(?:read_file|write_file|append_file|file_exists)\\b"
+    },
+    "math": {
+      "name": "support.function.math.backscript",
+      "match": "\\b(?:abs|floor|ceil|round|min|max|power|sqrt)\\b"
+    },
+    "constants": {
+      "name": "constant.language.backscript",
+      "match": "\\b(?:true|false|null)\\b"
+    },
+    "numbers": {
+      "name": "constant.numeric.backscript",
+      "match": "(?<![A-Za-z_0-9.])-?(?:\\d+(?:\\.\\d*)?|\\.\\d+)(?:[eE][+-]?\\d+)?(?![A-Za-z_0-9.])"
+    },
+    "variables": {
+      "name": "variable.other.backscript",
+      "match": "\\b[A-Za-z_][A-Za-z_0-9]*\\b"
+    }
+  }
+}

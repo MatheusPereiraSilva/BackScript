@@ -1,0 +1,55 @@
+"modules/math.wtf" import
+"Back" "Script" add print
+"  programming backwards  " trim uppercase print
+
+10 20 30 array numbers set
+numbers 40 push
+numbers 1 25 setat
+numbers print
+numbers pop print
+numbers length print
+
+"name" "Matheus" "age" 30 2 object user set
+user "name" property print
+user "active" true set_property
+user "active" has_property print
+user keys_length print
+
+end
+    "Access granted" print
+else
+    "Access denied" print
+user "age" property 18 greater_equal if
+
+end
+    end
+        continue
+    i 2 equal if
+    i square call print
+    end
+        break
+    i 4 greater_equal if
+0 10 i range
+
+0 i set
+end
+    i 1 add i set
+    end
+        continue
+    i 2 equal if
+    i print
+    end
+        break
+    i 3 equal if
+i 10 less while
+
+end
+    end
+        1 return
+    n 1 less_equal if
+    n n 1 subtract factorial call multiply return
+n factorial function
+
+5 factorial call print
+9 sqrt print
+2 8 power print

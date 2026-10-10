@@ -1,0 +1,6 @@
+10 20 30 40 array numbers set
+numbers print
+numbers 0 get print
+numbers length print
+numbers 1 999 setat numbers set
+numbers print
